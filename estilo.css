@@ -1,0 +1,182 @@
+
+/* Fondo degradado */
+body {
+    background: rgb(255,232,214);
+    background: -moz-radial-gradient(circle, rgba(255,232,214,1) 0%, rgba(221,190,169,1) 35%, rgba(203,153,126,1) 64%, rgba(183,183,164,1) 77%, rgba(165,165,141,1) 94%);
+    background: -webkit-radial-gradient(circle, rgba(255,232,214,1) 0%, rgba(221,190,169,1) 35%, rgba(203,153,126,1) 64%, rgba(183,183,164,1) 77%, rgba(165,165,141,1) 94%);
+    background: radial-gradient(circle, rgba(255,232,214,1) 0%, rgba(221,190,169,1) 35%, rgba(203,153,126,1) 64%, rgba(183,183,164,1) 77%, rgba(165,165,141,1) 94%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffe8d6",endColorstr="#a5a58d",GradientType=1);
+}
+
+/* Estilo de la tabla */
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #4e54c8;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+th#price:hover {
+    background-color: #6c7ae0;
+}
+
+td {
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Estilo para la imagen */
+img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+/* Estilos para las categorías */
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+li {
+    color: #0066cc;
+    font-weight: bold;
+}
+
+/* Mostrar u ocultar productos según el filtro */
+input#c1:checked ~ table tbody tr.c1 { display: table-row; }
+input#c1:not(:checked) ~ table tbody tr.c1 { display: none; }
+input#c2:checked ~ table tbody tr.c2 { display: table-row; }
+input#c2:not(:checked) ~ table tbody tr.c2 { display: none; }
+input#c3:checked ~ table tbody tr.c3 { display: table-row; }
+input#c3:not(:checked) ~ table tbody tr.c3 { display: none; }
+input#c4:checked ~ table tbody tr.c4 { display: table-row; }
+input#c4:not(:checked) ~ table tbody tr.c4 { display: none; }
+
+h1,h2,p{
+    text-align: center;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
+button {
+    font-family: system-ui, sans-serif;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    color: #000000;
+    width: 170px;
+    height: 71px;
+    border-radius: 25px;
+    background-color: #ececec; /* Color de fondo inicial */
+
+    /* Color de fondo al hacer hover */
+    transition: background-color .4s, color .4s;
+}
+
+button:hover {
+    background-color: #007acc; /* Nuevo color de fondo al hacer hover */
+    color: #fff; /* Color del texto al hacer hover */
+}
+
+button:active {
+    box-shadow: 0 0 9px inset #0009; 
+    background-color: #005fa3; /* Color al hacer click */
+    color: #fff;
+}
+
+.formularioOpciones {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: 25px;
+}
+
+.formularioOpciones form {
+    width: 100%;
+    background-color: #72c96e;
+    border: 1px solid #6fbf9b;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.formularioOpciones h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.formularioOpciones label {
+    display: block;
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.formularioOpciones input,
+.formularioOpciones select {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.formularioOpciones input:focus,
+.formularioOpciones select:focus {
+    border-color: #27ae60;
+    outline: none;
+    box-shadow: 0 0 5px rgba(39, 174, 96, 0.5);
+}
+
+.formularioOpciones button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #27ae60;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.formularioOpciones button:hover {
+    background-color: #219150;
+}
